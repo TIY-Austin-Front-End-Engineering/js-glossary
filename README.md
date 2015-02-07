@@ -1,1 +1,107 @@
-# js-glossary
+# JavaScript Glossary of Terms
+
+- Object
+	- JavaScript objects are collections (not to be confused with Backbone collections) of properties and methods. There are "built in" objects in JavaScript such as Number, String, Array, Object, etc. You can also define your own types of objects using classes.
+- Class
+	- A class is a specification (think of it as a blueprint or pattern and a set of instructions) of how to create an object. Thus, an object is a specific instance of a class.
+- Method
+	- A method is a function associated with an object. It is often used to perform actions on the objects properties.
+- Constructor
+	- A constructor is a bit of code that allows you to create objects from a class. You call the constructor by using the keyword new , followed by the name of the class, followed by any necessary parameters. For example, if you have a Dog class, you can create new objects of this type by saying new Dog().
+- Property
+	- A property is an association between a name and a value on an object. A property's value can be a function, in which case the property is known as a method. In addition to objects that are predefined in the browser, you can define your own objects.
+- Iterate
+	- Processing each of the items in an Array is a very common operation. JavaScript provides a number of ways of iterating over a collection (for, for in, while)
+- Scope
+- Data Type (Type)
+	- A data type particular kind of data item, as defined by the values it can take and the operations that can be performed on it. There are three categories of data types in JavaScript: Primary Data Types, Composite Data Types, and Special Data Types.
+	- Primary Data Types
+		- String
+		- Number
+		- Boolean
+	- Composite Data Types
+		- Object
+		- Array
+	- Special Data Types
+		- Null
+		- Undefined
+- Typecasting ( or just "casting")
+	- Typecasting is the process of converting data from one type to another. For example, converting a String to a Number. JavaScript povides a series of built in functions to allow you to typecast. Assume I have a variable `foo`. The following functions will allow me to change the type of a.
+		- parseInt(foo) - Attempts to interpret a String `foo` as an integer (whole number) and returns that integer value.
+		- foo.toString() - Attempts to interpret a Number, Array, Object, or Boolean `foo` as a String and returns that String value.
+		- parseFloat(foo) - Attempts to interpret a String `foo` as an decimal Number (floating point number) and returns that decimal value.
+		- Boolean(foo) - Interprets any variable `foo` as a Boolean and returns that Boolean value.
+- Back-end
+	- Code that runs on a server. Common back-end languages are (Ruby, Python, PHP, Java, etc.)
+- Front-end
+	- Code that runs in a visitors browser. The only front-end languages are HTML, CSS and JavaScript.
+- Expression
+	- An expression is any valid unit of code that resolves to a value. For example...
+		- 2+7
+		- var foo = 12
+		- foo.toString()
+		- Boolean(undefined)
+- Operators
+	- Simple answer can be given using expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and + is called operator. JavaScript language supports seven categories of operators:
+		- Assignment operators: An assignment operator assigns a value to its left operand based on the value of its right operand 
+			- `x = 7`
+			- `x +=3`
+			- `x -= 4`
+			- ...
+		- Comparison operators: A comparison operator compares its operands and returns a logical value (true or false) based on whether the comparison is true
+			- `x == 7`
+			- `x > 3`
+			- `x <= 4`
+			- ...
+		- Arithmetic operators: Arithmetic operators take numerical values (either literals or variables) as their operands and return a single numerical value
+			- `3.2 - 5`
+			- `8*3`
+			- `7^2`
+			- `4 + 4`
+			- `15 / 3`
+			- ...
+		- Bitwise operators: are not important
+		- Logical operators: Logical operators are typically used with Boolean (logical) values; when they are, they return a Boolean value. However, the && and || operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value. The logical operators are described in the following table.
+			- `true && false`
+			- `a || b`
+			- `null || 'hello'`
+			- `!true`
+			- `!foo.length`
+		- String operator
+			-In addition to the comparison operators, which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings. For example, "my " + "string" returns the string "my string". The shorthand assignment operator += can also be used to concatenate strings. For example, if the variable mystring has the value "alpha", then the expression mystring += "bet" evaluates to "alphabet" and assigns this value to mystring.
+		- Special operators
+			- `delete` deletes an object, an object's property, or an element at a specified index in an array.
+			- `instanceof` The instanceof operator returns true if the specified object is of the specified object type. The syntax is:
+				- `objectName instanceof objectType` 
+			- `new` You can use the new operator to create an instance of a user-defined object type or of one of the predefined object types Array, Boolean, Date, Function, Image, Number, Object, Option, RegExp, or String.
+			- `this` Use the this keyword to refer to the current object. In general, this refers to the calling object in a method. Use this as follows:
+			- `typeof` The typeof operator returns a string indicating the type of the unevaluated operand
+			- ...
+
+- Evaluate
+	- An expression is a combination of explicit values, variables, operators, and functions that are interpreted according to the particular rules of precedence, which computes and then produces (returns) another value. This process, like for mathematical expressions, is called evaluation. The value can be any valid JavaScript type.
+- Expression 
+	- An expression is a combination of explicit values, variables, operators, and functions that are interpreted according to the particular rules of precedence.
+- Function
+	- Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.
+- Literal
+	- A value written exactly as it's meant to be interpreted. In contrast, a variable is a name that can represent different values during the execution of the program.
+- Variable
+	- In JavaScript, a variable contains a value, such as "hello" or 5. When you use the variable, you refer to the data it represents. You use variables to store, retrieve, and manipulate values that appear in your code. Try to give your variables meaningful names to make it easy for other people to understand what your code does.
+- Loop
+	A loop is a sequence of instructions that is continually repeated until a certain condition is reached.
+- Operand
+	- Simple answer can be given using expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and + is called operator.
+- Regex
+	- Short for Regular Expressions, is a special text string for describing a search pattern. You can think of regular expressions as wildcards on steroids. You are probably familiar with wildcard notations such as *.txt to find all text files in a file manager.
+- Truthy
+	- A non Boolean value in JavaScript that evaluates to true.
+- Falsey
+	- A non Boolean value in JavaScript that evaluates to false.
+- Instantiate
+	- To instantiate is to create an instance of an object. An instantiated object is given a name and created using the structure described within a class.
+- Template
+	- A template is a pre-written set of HTML that we can use to "plug in" our own text or additional HTML elements. 
+- return
+	- The return statement ends function execution and specifies a value to be returned to the function caller.
+
